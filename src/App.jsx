@@ -1,12 +1,18 @@
 import './App.css'
+import Blogs from './components/Blogs'
+import BookMarks from './components/BookMarks'
+import Header from './components/header/Header'
 
 function App() {
 
   return (
     <>
      
-      <h1 className='text-2xl'>Knowledge Cafe </h1>
-
+    <Header></Header>
+    <main className='flex justify-between max-w-[80vw] mx-auto'>
+    <Blogs></Blogs>
+    <BookMarks></BookMarks>
+    </main>
 
 
     </>

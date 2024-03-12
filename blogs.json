@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "cover": "https://i.ibb.co/dPw34sy/pexels-markus-spiske-1089440.jpg",
+    "title": "10 Tips for Efficient JavaScript Programming",
+    "author_img": "https://i.ibb.co/tmkv5yq/pexels-andrea-piacquadio-3771839.jpg",
+    "posted_date": "2023-11-29",
+    "reading_time": 10,
+    "hashtags": ["javascript", "programming", "tips"],
+    "author" : "David Brown"
+  },
+  {
+    "id": 2,
+    "cover": "https://i.ibb.co/Xpy6zhX/pexels-realtoughcandycom-11035471.jpg",
+    "title": "Getting Started with React Native Development",
+    "author_img": "https://i.ibb.co/6BXdRqL/pexels-emre-keshavarz-3528716.jpg",
+    "posted_date": "2023-11-28",
+    "reading_time": 15,
+    "hashtags": ["react", "react native", "mobile development"],
+    "author" : "Michael Clark"
+  },
+  {
+    "id": 3,
+    "cover": "https://i.ibb.co/7gvxTXj/pexels-christina-morillo-1181671.jpg",
+    "title": "Introduction to Python Data Science Libraries",
+    "author_img": "https://i.ibb.co/y0bF0Jn/pexels-kaushal-moradiya-3400560.jpg",
+    "posted_date": "2023-11-27",
+    "reading_time": 12,
+    "hashtags": ["python", "data science", "libraries"],
+    "author" : "Christopher Lee"
+  },
+  {
+    "id": 4,
+    "cover": "https://i.ibb.co/c8z0gQ6/pexels-markus-spiske-6212801.jpg",
+    "title": "Mastering CSS Grid Layout",
+    "author_img": "https://i.ibb.co/yf0y3v8/pexels-ali-madad-sakhirani-997512.jpg",
+    "posted_date": "2023-11-26",
+    "reading_time": 8,
+    "hashtags": ["css", "layout", "web design"],
+    "author" : "Ryan Williams"
+  },
+  {
+    "id": 5,
+    "cover": "https://i.ibb.co/RDPF1sz/pexels-pixabay-276452.jpg",
+    "title": "10 Must-Have VS Code Extensions for Developers",
+    "author_img": "https://i.ibb.co/H7MY4xV/pexels-andrea-piacquadio-756484.jpg",
+    "posted_date": "2023-11-25",
+    "reading_time": 7,
+    "hashtags": ["vscode", "extensions", "development"],
+    "author" : "Matthew Taylor"
+  }
+]
