@@ -2,15 +2,15 @@ import PropTypes from "prop-types";
 import bookMarkIcon from "../assets/images/bookMark.png";
 
 
-const Blog = ({ blog, handleBookMark }) => {
+const Blog = ({ blog, handleBookMark, handleSpentTime }) => {
   const { title } = blog;
 
   return (
-    <div className="border-[.25rem] border-red-400 my-2 rounded-2xl p-4 flex flex-col gap-4 ">
+    <div className=" max-w-[850px]  my-10  p-4 flex flex-col gap-4 ">
       {/* cover */}
       <img
         src={blog.cover}
-        className="max-w-[1024px] max-h-[300px] object-cover object-center"
+        className="max-h-[450px] object-cover object-center"
       />
       {/* profile pic and other data */}
       <div className="flex justify-between items-center">
@@ -27,7 +27,11 @@ const Blog = ({ blog, handleBookMark }) => {
           <span className="text-xl font-medium text-[#11111199]">
             {blog.reading_time} min read
           </span>
-          <button onClick={handleBookMark}>
+          <button
+            onClick={() => {
+              handleBookMark(blog);
+            }}
+          >
             <img src={bookMarkIcon} />
           </button>
         </div>
@@ -43,7 +47,7 @@ const Blog = ({ blog, handleBookMark }) => {
         ))}
       </ul>
       {/* mark as read */}
-      <button className="flex justify-center max-w-[130px] underline text-[#6047EC] text-xl font-semibold">
+      <button onClick={()=>{handleSpentTime(blog.reading_time);}} className="w-[160px] underline text-[#6047EC] text-xl font-semibold">
         Mark as read
       </button>
     </div>
@@ -52,7 +56,9 @@ const Blog = ({ blog, handleBookMark }) => {
 
 
 Blog.propTypes = {
-    blog : PropTypes.object.isRequired
-}
+  blog: PropTypes.object.isRequired,
+  handleBookMark: PropTypes.func.isRequired,
+  handleSpentTime: PropTypes.func.isRequired,
+};
 
 export default Blog;
