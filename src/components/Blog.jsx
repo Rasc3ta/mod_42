@@ -47,7 +47,7 @@ const Blog = ({ blog, handleBookMark, handleSpentTime }) => {
         ))}
       </ul>
       {/* mark as read */}
-      <button onClick={()=>{handleSpentTime(blog.reading_time);}} className="w-[160px] underline text-[#6047EC] text-xl font-semibold">
+      <button onClick={()=>{handleSpentTime(blog.reading_time, blog.id);}} className="w-[160px] underline text-[#6047EC] text-xl font-semibold">
         Mark as read
       </button>
     </div>

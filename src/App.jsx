@@ -1,24 +1,28 @@
-import { useState } from 'react'
-import './App.css'
-import Blogs from './components/Blogs'
-import BookMarks from './components/BookMarks'
-import Header from './components/header/Header'
-import TotalRead from './components/TotalRead'
+import { useState } from "react";
+import "./App.css";
+import Blogs from "./components/Blogs";
+import BookMarks from "./components/BookMarks";
+import Header from "./components/header/Header";
+import TotalRead from "./components/TotalRead";
 
 function App() {
-
   const [bookMark, setBookMark] = useState([]);
 
   const [spentTime, setSpentTime] = useState(0);
 
-  const handleBookMark = blog => {
-    setBookMark([...bookMark, blog]);
-  }
+  const handleBookMark = (blog) => {
+    !bookMark.includes(blog) && setBookMark([...bookMark, blog]);
+  };
 
-  const handleSpentTime = (time)=>{
+  // handle mark as read
+  const handleSpentTime = (time, id) => {
     setSpentTime(spentTime + time);
-    console.log(spentTime + time);
-  }
+    setBookMark(
+      bookMark.filter((blog) => {
+        return blog.id !== id;
+      })
+    );
+  };
 
   return (
     <>
@@ -37,4 +41,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
