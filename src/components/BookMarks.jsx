@@ -10,8 +10,8 @@ const BookMarks = ({ bookMark }) => {
       </h2>
       <div className="flex flex-col gap-4">
           {
-      bookMark.map((bookmark) => (
-         <BookMark key={bookmark.id} bookMark={bookmark}></BookMark>
+      bookMark.map((bookmark, idx) => (
+         <BookMark key={idx} bookMark={bookmark}></BookMark>
          ))
         }
       </div>

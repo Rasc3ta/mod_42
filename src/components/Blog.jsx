@@ -40,8 +40,8 @@ const Blog = ({ blog, handleBookMark, handleSpentTime }) => {
       <h2 className="text-4xl font-bold">{title}</h2>
       {/* hashtags */}
       <ul className="flex gap-4 text-[#11111199]">
-        {blog.hashtags.map((tag) => (
-          <li className="text-xl font-medium" key={blog.id}>
+        {blog.hashtags.map((tag,idx) => (
+          <li className="text-xl font-medium" key={idx}>
             #{tag}
           </li>
         ))}
